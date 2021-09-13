@@ -1,0 +1,147 @@
+﻿AULA 01
+
+TIPOS, VARAVEIS E FUNCOES
+
+POR QUE OS FUNDAMENTOS SAO IMPORTANTES?
+
+ONDE COMEÇAMOS E ATÉ ONDE VAMOS?
+
+- VARIÁVEIS,
+- TIPOS DE DADOS,
+- O NODEJS,
+- OPERADORES,
+- FUNÇÕES.
+
+
+TIPOS DE DADOS
+
+3 TIPOS PRINCIPAIS DE DADOS
+
+1- NÚMEROS,
+2- STRINGS (TEXTOS E CARACTERES),
+3- BOOLEANOS (VDD OU FALSO).
+
+
+AULA 01 (RESUMO)
+
+- Que o computador consegue apenas armazenar valores em alguns tipos de variáveis, como números texto e booleanos;
+- Como declarar uma variável numérica, com tipo number, e associar um valor a ela, podendo ser um inteiro ou um valor de ponto flutuante;
+- Como declarar uma variável de texto, conhecida como string, e colocar uma frase, número, pontuação ou uma mistura de todos esses dentro dela;
+- Como declarar uma variável booleana e definir seu valor como verdadeiro (true) ou falso (false);
+- Onde as booleanas mais aparecem, como resultados de comparações com === ou outros operadores de comparação como >=.
+
+AULA 02
+
+VARIAVEIS
+
+FORMAS
+
+- VAR;
+- LET;
+- CONST.
+
+
+
+
+
+
+
+
+
+
+
+
+AULA 03
+
+- Var tem um escopo global, então funciona em qualquer parte do código, o que pode gerar possíveis problemas em relação à lógica da aplicação;
+
+- Let e Const têm escopo local, sendo assim, não podem ser acessadas em outros escopos, e const não pode ter seu valor alterado depois de definido;
+
+
+- O JavaScript considera alguns valores como false durante comparações, como com null, undefined, 0, NaN e Strings vazias;
+
+- Null é usado quando não queremos dar um valor para uma variável, mas também não queremos deixá-lo como undefined (não definido);
+
+- Null é um objeto no JavaScript, diferente de undefined, que tem seu próprio tipo, e isso pode causar problemas se não tomarmos cuidado ao utilizá-lo;
+
+- O JavaScript converte automaticamente entre tipos de valores, como números para texto e para booleanos, porém não é interessante deixá-lo fazer isso automaticamente, pois podem ocorrer erros;
+
+- Temos como forçar uma mudança de tipo utilizando os métodos Number() e String(), onde Number() converte as variáveis para números ou NaN caso tenha algum erro na conversão, e String() converte as variáveis para texto.
+
+AULA 04
+
+Cada linguagem de programação tem sua própria forma de lidar com erros. O JavaScript começa dividindo cada tipo de erro possível em algumas categorias:
+RangeError: Quando o código recebe um dado do tipo certo, porém não dentro do formato aceitável. Por exemplo, um processamento que só pode ser feito com números inteiros maiores ou iguais a zero, mas recebe -1;
+
+ReferenceError: Normalmente ocorre quando o código tenta acessar algo que não existe, como uma variável que não foi definida; muitas vezes é causado por erros de digitação ou confusão nos nomes utilizados, mas também pode indicar um erro no programa;
+
+SyntaxError: Na maior parte dos casos ocorre quando há erros no programa e o JavaScript não consegue executá-lo. Os erros podem ser métodos ou propriedades escritos ou utilizados de forma incorreta, por exemplo, operadores ou sinais gráficos com elementos a menos, como esquecer de fechar chaves ou colchetes;
+
+TypeError: Indica que o código esperava receber um dado de um determinado tipo, tal qual uma string de texto, mas recebeu outro, como um número, booleano ou null.
+
+Embora seja o mais utilizado, .log() é um dos vários métodos que podemos utilizar para exibir informações na chamada “saída padrão” - o terminal - enquanto estamos desenvolvendo uma aplicação. A palavra log significa algo como “registro”, então este método apenas registra no terminal o que passamos entre os parênteses, por exemplo o conteúdo de uma variável ou o resultado de uma operação.
+Entre os outros métodos, existem:
+- console.error() para exibir mensagens de erro;
+- console.table() para visualizar de forma mais organizada informações tabulares;
+- console.time() e console.timeEnd() para temporizar período que uma operação de código leva para ser iniciada e concluída;
+- console.trace() para exibir a stacktrace de todos os pontos (ou seja, os arquivos chamados) por onde o código executado passou durante a execução.
+- As características principais do JavaScript, como ser uma linguagem interpretada e dinamicamente tipada;
+- O que o NodeJS é um interpretador de JavaScript para backend, ou seja, não executa no navegador, mas sim no servidor;
+- Como ler os erros que aparecem no console da aplicação, podendo usar um tradutor, como o Google Tradutor, para entender o que o erro está avisando;
+- O que é stacktrace, também chamado de pilha, que nos auxilia a saber o que está acontecendo quando temos um erro, e onde ele se localiza; 
+- O que é o Console API e como podemos utilizá-lo usando o Console.log() e console.error();
+- Onde as mensagem do console devem aparecer dependendo do interpretador que estamos usando, sendo que para o NodeJS as mensagens são mostradas no terminal.
+
+
+AULA 05
+
+TIPOS DE OPERADORES
+
+- ||: Operador “ou”, retorna true caso uma condição seja válida;
+
+- &&: Operador “e”, retorna true somente se todas as condições forem válidas;
+
+- != e !==: Operadores “não igual” e “estritamente não igual”, utilizados para comparação, da mesma forma que == e === retornam true ou false.
+
+
+ALGUNS OPERADORES JAVASCRIPT 
+
+- O uso de operadores: >= como operador de comparação entre o valor da variável idade e 18 e também o operador ternário como condicional para retornar o valor da variável bebidaMaior ou bebidaMenor de acordo com o resultado da comparação;
+
+- Template strings: Utilizamos a sintaxe do acento grave + ${} em conjunto com as aspas duplas ””. Teste também com aspas simples!;
+
+- Operador ternário: Vimos que é possível não apenas exibir o valor de variáveis utilizando o ${}, mas também fazer operações com JavaScript - por exemplo, condicionais - e inserir o correspondente ao true ou false na string de texto.
+
+
+
+
+NESTA AULA VIMOS
+
+- A diferença entre fazer comparações com ==, em que o JavaScript faz conversão entre os tipos de variáveis antes de fazer a comparação, e ===, em que tanto o valor quanto o tipo da variável deve ser o mesmo;
+
+- Como é escrito um operador ternário, com o qual fazemos uma comparação entre valores digitando um ?, seguido da possibilidade true, um : e a possibilidade false, ou seja, comparação ? true : false;
+
+- O porquê do nome “operador ternário”, que se deve ao fato de termos 3 operadores juntos em uma única linha para desempenhar uma tarefa e devolver um resultado;
+
+- O uso da template literal, que facilita a construção de strings que demandam concatenação (a operação em que se junta 2 strings), e foi introduzido no ES6;
+
+- Como usar a template literal, escrevendo o texto entre acentos graves () e colocando as variáveis com ${variavel} para que o valor deles fique nessa posição.
+
+AULA 06
+
+- Math.round(): Faz o arredondamento (round em inglês) de um número de ponto flutuante para o inteiro mais próximo:
+
+- Math.floor(): Faz o arredondamento para o valor mais baixo, também conhecido como piso (floor em inglês);
+
+- Math.trunc() : Desconsidera os números decimais, o que é conhecido como truncamento;
+
+- Math.pow() : Faz a exponenciação de 2 números, quando for simples, como ao quadrado(2) ou cubo(3). Recomenda-se usar a multiplicação por ser mais rápido;
+
+- Math.sqrt() : Retorna a raiz quadrada de um número;
+
+- Math.min(): Retorna o menor valor entre os argumentos;
+
+- Math.max(): Retorna o maior valor entre os argumentos;
+
+- Math.random(): Retorna um valor randômico (random em inglês) entre 0 e 1, então não teremos um valor esperado para receber.
+
